@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url(heather\ _\ nakamoto\ yuta\ ✓\ -\ chapter\ four.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    height: 70px;
+}
+
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+    color: black;
+}
+
+header h1 a:hover {
+    color: red;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+.lastname {
+    margin-left: -48px;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.atas {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.atas a {
+    color: black;
+}
+
+.atas:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#id {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: whitesmoke;
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: black;
+}
+
+.sidebar ul li {    
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: gray;
+}
+
+.sidebar ul li a:hover {
+    color: red;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+.awal {
+    display: flex;
+    margin-left: 510px;
+    margin-top: 20%;
+}
+
+.awal1 {
+    color: white;
+}
+
+.awal2 {
+    margin-left: 10px;
+    color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+.container .hero-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid ;
+}
+
+.hero-pic img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h5 {
+    color: white;
+    font-size: 14px;
+}
+
+.hero-text h1 {
+    color: white;
+}
+
+.hero-text h5 span {
+    color: red;
+}
+
+.hero-text p {
+    color: white;
+}
+
+.btn-group {
+    margin: 45px 0;
+}
+
+.btn-group .btn {
+    border-color: #d5d5d5;
+    color: #fff;
+    padding: 12px 25px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+}
+
+.btn-active {
+    border-color: #007ced;
+}
+
+.hero-text .sosial i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.hero-text h1 {
+    margin-left: -23px;
+}
+
+.btn-group a:hover {
+    color: red;
+}
+
+.hero-text .sosial i:hover {
+    color: red;
+    transform: rotate(360deg);
+}
+
+.skill {
+    display: flex;
+    margin-left: 290px;
+    margin-top: 10%;
+}
+
+.skill h1 {
+    text-align: center;
+}
+
+.css {
+    margin-left: 50px;
+}
+
+.js {
+    margin-left: 50px;
+}
+
+.js img {
+    height: 225px;
+}
+
+.html h1, .css h1, .js h1 {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        flex-direction: column;
+        padding-top: 2rem;
+        margin-left: -50px;
+        height: 700px;
+    }
+
+    .hero-header {
+        width: 720px;
+    }
+
+    .hero-text {
+        pad: 40px 0px;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    .atas ul {
+        display: none;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    #check {
+        position: absolute ;
+    }
+
+    .awal {
+        margin-left: 200px;
+        margin-top: 30%;
+    }
+
+    .skill {
+        margin-left: 10px;
+        margin-top: 13%;
+    }
+
+    body {
+        height: 100%;
+    }
+
+    body img {
+        height: 100%;
+    }
+
+    .js img {
+        height: 225px;
+    }
+}
